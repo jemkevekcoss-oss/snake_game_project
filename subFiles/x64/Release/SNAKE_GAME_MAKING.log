@@ -1,0 +1,117 @@
+﻿  AdditionalFunc.cpp
+  Button.cpp
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Button.cpp(40,70): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Button.cpp(40,70): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Button.cpp(40,102): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Button.cpp(40,102): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Button.cpp(54,70): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Button.cpp(54,70): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Button.cpp(54,102): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Button.cpp(54,102): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Food.cpp
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Food.cpp(29,83): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Food.cpp(29,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Food.cpp(31,89): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Food.cpp(31,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Food.cpp(36,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Food.cpp(37,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  Game.cpp
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(71,128): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(72,126): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(73,121): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(74,119): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(75,126): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(76,93): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(77,89): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(80,148): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'Game.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(64,93): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(64,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(382,94): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(382,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(393,95): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(393,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(394,86): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(394,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(425,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(425,45): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(472,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(472,51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(474,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(474,51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(478,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(478,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(482,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(482,51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(484,77): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.cpp(484,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  main.cpp
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(71,128): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'main.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(72,126): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'main.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(73,121): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'main.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(74,119): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'main.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(75,126): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'main.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(76,93): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'main.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(77,89): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'main.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Game.h(80,148): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'main.cpp')
+  
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(14,27): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(14,16): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(25,35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(25,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(66,84): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(66,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(95,90): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(95,70): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(190,84): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(190,53): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(203,108): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\main.cpp(203,62): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Map.cpp
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(44,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(44,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(45,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(45,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(73,21): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(120,81): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(120,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(145,76): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Map.cpp(145,53): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Snake.cpp
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Snake.cpp(17,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\SNAKE_GAME_MAKING\Snake.cpp(18,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Generating code
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 597 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  SNAKE_GAME_MAKING.vcxproj -> C:\Users\MY PC\OneDrive\Documents\For_Learning\Git_learning\git_work\SnakeGameProject\SNAKEGAME\SNAKE_GAME_MAKING\x64\Release\SNAKE_GAME_MAKING.exe
