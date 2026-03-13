@@ -1,0 +1,257 @@
+#include <iostream>
+#include "raylib.h"
+#include <deque>
+#include <raymath.h>
+#include <string>
+
+
+using namespace std;
+
+/*
+Valid Colors : LIGHTGRAY, GRAY, DARKGRAY, YELLOW, GOLD, ORANGE, PINK, RED, MAROON, GREEN, LIME, DARKGREEN,WHITE, BLACK, BLANK  
+*/
+
+Color green = {173,204,96,100};
+Color darkgreen = {43,51,24,255};
+
+int CellSize = 25;
+int CellCount = 40;
+
+float offset = 75;
+
+
+bool eventTrigger(const double& interval,double &lastUpdateTime) {
+    double currentTime = GetTime();
+    if (currentTime - lastUpdateTime >= interval) {
+        lastUpdateTime = currentTime;
+        return true;
+    }
+    return false;
+}
+
+bool ElementOnDeque(Vector2 position,deque <Vector2> Deque) {
+    for (int i = 0; i < Deque.size(); i++) {
+        if (Vector2Equals(position, Deque[i])) return true;
+    }
+    return false;
+}
+
+
+class Snake {
+public:
+    deque <Vector2> body = { Vector2{7,6},Vector2{6,6},Vector2{5,6}};
+    Vector2 direction = { 1,0 };
+    bool addSegment = false;
+
+    void Draw() {
+        for (unsigned int i = 0; i < body.size(); i++) {
+            float x = body[i].x;
+            float y = body[i].y;
+            Rectangle segment = Rectangle{ offset + x * CellSize,offset + y * CellSize,(float)CellSize,(float)CellSize };
+
+            //DrawRectangle(x * CellSize, y * CellSize, CellSize, CellSize, darkgreen);
+            DrawRectangleRounded(segment, 0.5, 6, darkgreen);
+
+        }
+    }
+
+    void Update() {
+        body.push_front(Vector2Add(body[0], direction));
+        if (addSegment) {   
+            addSegment = false;
+        }
+        else {
+            body.pop_back();
+        }
+    }
+
+    void Reset() {
+        //KHởi tạo trạng thái, vị trí rắn ban đầu
+        body = { Vector2{7,6},Vector2{6,6},Vector2{5,6} };
+        direction = { 1,0 };
+
+    }
+
+};
+
+class Food {
+public:
+    Vector2 position;
+    Texture2D texture;
+
+    Food(deque <Vector2> SnakeBody) { //Constructor
+        Image image = LoadImage("C:/SnakeGameWithRaylib/Images/Apple_snakeGame.jpg");
+
+        // Ép ảnh về đúng kích thước
+        ImageResize(&image, CellSize, CellSize);
+        // Đẩy lên GPU
+        texture = LoadTextureFromImage(image);
+        // Giải phóng 
+        UnloadImage(image);
+        position = GenerateRandomPos(SnakeBody); //Vị trí đầu tiên của mồi
+    }
+
+    ~Food() {
+        UnloadTexture(texture);
+    }
+
+    void Draw() {
+        
+        DrawTexture(texture, offset +  position.x*CellSize, offset + position.y*CellSize,WHITE);
+
+    }
+
+    Vector2 GetRandomCell() {
+        float x = GetRandomValue(0 , CellCount - 1 );
+        float y = GetRandomValue(0 , CellCount - 1 );
+
+        return Vector2{ x,y };
+    }
+
+    Vector2 GenerateRandomPos(deque <Vector2> SnakeBody) {
+
+        
+        Vector2 pos = GetRandomCell();
+        while (ElementOnDeque(pos, SnakeBody)) { //Truyền vào pos ko phải position
+            pos = GetRandomCell();
+        }
+        return pos;
+    }
+    
+};
+
+class Game {
+public:
+    Snake snake = Snake();
+    Food food = Food(snake.body);
+    bool running = true;
+    int score = 0;
+
+    Sound eatSound;
+    Sound wallColSound;
+
+    Game() {
+        InitAudioDevice();
+        eatSound = LoadSound("C:/SnakeGameWithRaylib/Sounds/eat.mp3");
+        wallColSound = LoadSound("C:/SnakeGameWithRaylib/Sounds/wall.mp3");
+    }
+    ~Game() {
+        UnloadSound(eatSound);
+        UnloadSound(wallColSound);
+        CloseAudioDevice();
+
+    }
+
+
+    void Draw() {
+        snake.Draw(); 
+        food.Draw();
+    }
+    void Update() {
+        if (running) {
+            snake.Update();
+            CheckCollisionwithFood();
+            checkCollisionWithWalls();
+            checkCollisionWithBody();
+        }
+    }
+
+    void CheckCollisionwithFood() {
+        //if (snake.body[0] == food.position) food.position = food.GenerateRandomPos();
+        if (Vector2Equals(snake.body[0], food.position)) {
+            cout << "Eating food\n";
+            food.position = food.GenerateRandomPos(snake.body);
+            snake.addSegment = true;
+            ++score;
+            PlaySound(eatSound);
+
+            //Vector2 segment = snake.body[snake.body.size() - 1];
+            //snake.body.push_back(segment);
+        }
+    }
+
+
+    void GameOver() {
+        cout << "Game Over!\n";
+        snake.Reset();
+        food.position = food.GenerateRandomPos(snake.body);
+        running = false;
+        score = 0;
+        PlaySound(wallColSound);
+
+    }
+
+    void checkCollisionWithWalls() { //////////////////////////////////////
+
+        if (snake.body[0].x == CellCount || snake.body[0].x < 0) GameOver();
+        if (snake.body[0].y == CellCount || snake.body[0].y < 0) GameOver();
+
+    }
+
+    void checkCollisionWithBody() {
+        //Snake without it's head
+        deque <Vector2> headlessBody = snake.body;
+        headlessBody.pop_front();
+        if (ElementOnDeque(snake.body[0], headlessBody)) {
+            GameOver();
+        }
+    }
+};
+
+int main() {
+    
+    cout << "Starting the Snake Game";
+    //Creating the Window
+    InitWindow(2*offset + CellSize*CellCount, 2 * offset + CellSize * CellCount, "SNAKE GAME");
+    SetTargetFPS(60);
+
+    double lastUpdateTime = 0;
+
+    Game game = Game();
+
+    while (!WindowShouldClose()) {
+
+        // ---- 1. INPUT (Xử lý phím bấm) ----
+          if (IsKeyPressed(KEY_UP) && game.snake.direction != Vector2{ 0, 1 }) {
+            game.snake.direction = { 0,-1 }; game.running = true;
+        } if (IsKeyPressed(KEY_DOWN) && game.snake.direction != Vector2{ 0, -1 }) {
+            game.snake.direction = { 0, 1 }; game.running = true;
+        } if (IsKeyPressed(KEY_LEFT) && game.snake.direction != Vector2{ 1, 0 }) {
+            game.snake.direction = { -1, 0 }; game.running = true;
+        } if (IsKeyPressed(KEY_RIGHT) && game.snake.direction != Vector2{ -1, 0 }) {
+            game.snake.direction = { 1, 0 }; game.running = true;
+        }
+        
+        
+        // ---- 2. UPDATE (Cập nhật logic) ----
+        if (eventTrigger(0.2, lastUpdateTime)) {
+            game.Update();
+        }
+
+        
+
+        // ---- 3. DRAW (Vẽ lên màn hình) ----
+        BeginDrawing();
+        ClearBackground(WHITE); // Luôn gọi lệnh này đầu tiên sau BeginDrawing
+        //DrawLine(int startPosX, int startPosY, int endPosX, int endPosY, Color color); -> Độ dày 1 pixel 
+        //DrawLineEx(Vector2 startPos, Vector2 endPos, float thickness, Color color); 
+        //DrawText(text,posX,posY,frontSize,color);
+        
+        DrawRectangleLinesEx(Rectangle{offset-5,offset-5,(float)CellSize * CellCount + 10,(float)CellSize * CellCount  + 10}, 5, darkgreen);
+        game.Draw();
+
+        
+
+        EndDrawing();
+    }
+
+    CloseWindow();
+    return 0;
+}
+
+
+
+/*
+"C:\SnakeGameWithRaylib\Images\Apple_snakeGame.jpg"
+DrawRectangle(position.x*CellSize, position.y * CellSize, CellSize, CellSize, darkgreen);
+*/
